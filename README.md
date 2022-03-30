@@ -2,13 +2,23 @@
 
 [3월 30일]
 
+## 버전 코드
+1. index.js 파일에 
+[firebase 8버전 이하]
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+
+[firebase 9버전 이상]
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+<br>
+버전에 맞는 코드를 복사 후 실행
+
+## 수업 내용
 1. $npm install firebase
-2. src 폴더에 새 파일 firedase.js 만듬
-
-
-
-
-
+2. src 폴더에 새 파일 firedase.js 생성
 
 [3월 23일]
 
