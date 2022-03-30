@@ -1,5 +1,15 @@
 # 안혜원
 
+[3월 30일]
+
+1. $npm install firebase
+2. src 폴더에 새 파일 firedase.js 만듬
+
+
+
+
+
+
 [3월 23일]
 
 ## 로컬PC에서 push
