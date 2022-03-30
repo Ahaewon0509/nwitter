@@ -1,6 +1,13 @@
 # 안혜원
 
 [3월 30일]
+
+## src/components/routs 경로에 새로운 파일 생성
+1. Auth.js
+2. EditProfile.js
+3. Home.js
+4. Profile.js
+
 ## .gitignore 파일 코드 작성
 .env 코드 작성 -> 깃허브 파일 안 보이게 함
 
@@ -10,7 +17,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-
+<br>
 [firebase 9버전 이상]
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
