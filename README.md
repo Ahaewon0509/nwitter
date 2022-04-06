@@ -5,7 +5,15 @@
 1. useState 함수 사용하기: 
 - import { useState } from "react";
 - const [isLoggedIn, setIsLoggedIn] = useState(false);
-2.
+## 파이어베이스 로그인 준비하기
+2. useState 함수 위치 이동하기
+- import { useState } from "react";
+- const [isLoggedIn, setIsLoggedIn] = useState(false);
+- <>
+    <AppRouter isLoggedIn={isLoggedIn} />
+    <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
+    </>
+
 
 
 
