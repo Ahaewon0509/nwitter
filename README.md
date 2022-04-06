@@ -1,5 +1,15 @@
 # 안혜원
 
+[4월 6일]
+## 라우터 적용하기
+1. useState 함수 사용하기: 
+- import { useState } from "react";
+- const [isLoggedIn, setIsLoggedIn] = useState(false);
+2.
+
+
+
+
 [3월 30일]
 
 ## src/components/routs 경로에 새로운 파일 생성
