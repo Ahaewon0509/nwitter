@@ -1,5 +1,20 @@
 # 안혜원
 
+[4월 13일]
+##
+1. 오류 수정 코드
+- 버전 8 이전 -<br>
+import firebase from 'friebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+- 버전 9 이후 -<br>
+import firebase from 'friebase/compat/app';
+import 'firebase/comapt/auth';
+import 'firebase/combat/firestore';
+
+
+
+
 [4월 6일]
 ## 라우터 적용하기
 1. useState 함수 사용하기: 
