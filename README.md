@@ -1,17 +1,19 @@
-# 안혜원
+# 602277111 안혜원
 
 [4월 13일]
-##
+## 파이어베이스 인증 모듈 사용하기
 1. 오류 수정 코드
 - 버전 8 이전<br>
-import firebase from 'friebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
+import firebase from 'friebase/app';<br>
+import 'firebase/auth';<br>
+import 'firebase/firestore';<br>
 - 버전 9 이후<br>
-import firebase from 'friebase/compat/app';
-import 'firebase/comapt/auth';
-import 'firebase/combat/firestore';
-
+import firebase from 'friebase/compat/app';<br>
+import 'firebase/comapt/auth';<br>
+import 'firebase/combat/firestore';<br>
+2. firebase 다운그레이드 코드
+- package-lock.json 파일<br>
+npm i firebase @8.8.0
 
 
 
