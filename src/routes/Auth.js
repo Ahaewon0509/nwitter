@@ -38,6 +38,10 @@ const Auth = () => {
 };
 const toggleAccount = () => setNewAccount((prev) => !prev);
 
+const onSocialClick = (event) => {
+    console.log(event.target.name);
+};
+
     return (
         <div>
             <form onSubmit={onSubmit}>
@@ -63,8 +67,14 @@ const toggleAccount = () => setNewAccount((prev) => !prev);
             <span onClick={toggleAccount}>
                 {newAccount ? "Sing In" : "Create Account"}
             </span>
-        <button>Comtinue with Google</button>
-        <button>Comtinue with Github</button>
+    <div>
+        <button onClick={onSocialClick} name="google">
+            Comtinue with Google
+        </button>
+        <button onClick={onSocialClick} name="github">
+            Comtinue with Github
+        </button>
+    </div>
         </div>
     )
 }
