@@ -3,7 +3,13 @@
 [4월 27일]
 ## 이메일, 비밀번호 인증 기능 사용해 보기
 1. App.js 코드 수정
-2. 
+2. 로그인, 회원가입 토클 버튼 적용하기
+- <span onClick={toggleAccount}>
+    {newAccount ? "Sing In" : "Create Account"}
+    </span>
+3. error.message 화면에 출력
+- setError(error.message);
+- {error}
 
 
 
