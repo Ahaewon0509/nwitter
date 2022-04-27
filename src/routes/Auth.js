@@ -1,9 +1,11 @@
+import { authService } from "fbase";
 import { useState } from "react";
 
 const Auth = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [newAccount, setNewAccount] = useState(true);
+    const [error, setError] = useState("");
 
     const onChange = (event) => {
         //console.log(event.target.name);
@@ -17,14 +19,24 @@ const Auth = () => {
         }
     };
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault(); //enter치면 새로고침을 발생하지 않게 하는 코드
+        try {
+            let data;
         if (newAccount) {
             // create newAccount
+            data = await authService.createUserWithEmailAndPassword(email, password);
         } else {
             // log in
+            data = await authService.signInWithEmailAndPassword(email, password);
         }
-    };
+        console.log(data);
+    } catch (error) {
+        //console.log(error);
+        setError(error.message);
+    }
+};
+const toggleAccount = () => setNewAccount((prev) => !prev);
 
     return (
         <div>
@@ -46,7 +58,11 @@ const Auth = () => {
                 onChange={onChange}
                 />
                 <input type="submit" value= {newAccount ? "Create Account" : "Log In"} />
+                {error}
             </form>
+            <span onClick={toggleAccount}>
+                {newAccount ? "Sing In" : "Create Account"}
+            </span>
         <button>Comtinue with Google</button>
         <button>Comtinue with Github</button>
         </div>
