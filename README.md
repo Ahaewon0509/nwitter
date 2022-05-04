@@ -5,7 +5,14 @@
 - $npm cache clean --force
 2. // node module 설치
 - $ npm install
-
+3. 내비게이션 컴포넌트 만들고 라우터에 추가하기
+- ./src/components/Navigaion.js 새로운 파일 생성
+4. 로그인 시 "This is Navigaion!" 글 보여주는 코드
+- const Navigation = () => {
+    return <nav>This is Navigation!</nav>
+};
+export default Navigation;
+5. 
 
 [4월 27일]
 ## 이메일, 비밀번호 인증 기능 사용해 보기
