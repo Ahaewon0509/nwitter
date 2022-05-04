@@ -1,4 +1,11 @@
 # 602277111 안혜원
+[5월 4일]
+## Clone 직후
+1. // cache 삭제
+- $npm cache clean --force
+2. // node module 설치
+- $ npm install
+
 
 [4월 27일]
 ## 이메일, 비밀번호 인증 기능 사용해 보기
