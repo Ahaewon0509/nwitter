@@ -2,11 +2,11 @@
 <h2>[5월 4일]</h2>
 
 ## Clone 직후
-1. // cache 삭제
+<h3>1. // cache 삭제</h3>
 - $npm cache clean --force<br>
-2. // node module 설치
+<h3>2. // node module 설치</h3>
 - $ npm install<br>
-3. 내비게이션 컴포넌트 만들고 라우터에 추가하기
+<h3>3. 내비게이션 컴포넌트 만들고 라우터에 추가하기</h3>
 - ./src/components/Navigaion.js 새로운 파일 생성<br>
 <h3>4. 로그인 시 "This is Navigaion!" 글 보여주는 코드</h3>
 - const Navigation = () => {
@@ -26,11 +26,11 @@ export default Navigation;<br>
 
 ## 이메일, 비밀번호 인증 기능 사용해 보기
 1. App.js 코드 수정<br>
-2. 로그인, 회원가입 토클 버튼 적용하기
+<h3>2. 로그인, 회원가입 토클 버튼 적용하기</h3>
 - <span onClick={toggleAccount}>
     {newAccount ? "Sing In" : "Create Account"}
     </span><br>
-3. error.message 화면에 출력
+<h3>3. error.message 화면에 출력</h3>
 - setError(error.message);
 - {error}
 
@@ -38,7 +38,7 @@ export default Navigation;<br>
 <h2>[4월 13일]</h2>
 
 ## 파이어베이스 로그인 설정하기
-1. 파이어베이스 -> Authentication -> Sign-in method<br>
+<h3>1. 파이어베이스 -> Authentication -> Sign-in method<br></h3>
 - 이메일, 비밀번호 로그인 설정<br>
 - 구글 소셜 로그인 설정하기<br>
 - 깃허브 소셜 로그인 설정<br>
@@ -46,7 +46,7 @@ export default Navigation;<br>
 1. Auth.js 파일 작성
 
 ## 파이어베이스 인증 모듈 사용하기
-1. 오류 수정 코드
+<h3>1. 오류 수정 코드</h3>
 - 버전 8 이전<br>
 import firebase from 'friebase/app';<br>
 import 'firebase/auth';<br>
@@ -55,7 +55,7 @@ import 'firebase/firestore';<br>
 import firebase from 'friebase/compat/app';<br>
 import 'firebase/comapt/auth';<br>
 import 'firebase/combat/firestore';<br>
-2. firebase 다운그레이드 코드
+<h3>2. firebase 다운그레이드 코드</h3>
 - package-lock.json 파일<br>
 npm i firebase @8.8.0
 
@@ -63,11 +63,11 @@ npm i firebase @8.8.0
 <h2>[4월 6일]</h2>
 
 ## 라우터 적용하기
-1. useState 함수 사용하기: 
+<h3>1. useState 함수 사용하기: </h3>
 - import { useState } from "react";
 - const [isLoggedIn, setIsLoggedIn] = useState(false);
 ## 파이어베이스 로그인 준비하기
-2. useState 함수 위치 이동하기
+<h3>2. useState 함수 위치 이동하기</h3>
 - import { useState } from "react";
 - const [isLoggedIn, setIsLoggedIn] = useState(false);
 - <>
@@ -87,7 +87,7 @@ npm i firebase @8.8.0
 .env 코드 작성 -> 깃허브 파일 안 보이게 함
 
 ## 버전 코드
-1. index.js 파일에 
+<h3>1. index.js 파일에</h3> 
 [firebase 8버전 이하]
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -106,21 +106,21 @@ import 'firebase/compat/firestore';
 
 <h2>[3월 23일]</h2>
 
-## 로컬PC에서 push
+<h3> ## 로컬PC에서 push</h3>
 $ git config -- global user.name "Your Name" <br>
 $ git config -- global user.email you@example.com <br>
 
-## 확인방법
+<h3>## 확인방법</h3>
 git config user.name<br>
 git config user.email<br>
 
-## 수업한 파일
+<h3>## 수업한 파일</h3>
 1. README.me<br>
 2. package.json<br>
 3. App.js<br>
 4. index.js<br>
 
-## 수업에서 삭제한 파일
+<h3>## 수업에서 삭제한 파일</h3>
 1. App.css<br>
 2. App.test.js<br>
 3. index.css<br>
