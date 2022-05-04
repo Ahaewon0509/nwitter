@@ -120,7 +120,7 @@ git config user.email<br>
 3. App.js<br>
 4. index.js<br>
 
-<h3>## 수업에서 삭제한 파일</h3>
+<h3> ## 수업에서 삭제한 파일</h3>
 1. App.css<br>
 2. App.test.js<br>
 3. index.css<br>
