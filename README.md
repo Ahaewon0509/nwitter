@@ -3,26 +3,33 @@
 
 ## Clone 직후
 1. // cache 삭제
-- $npm cache clean --force
+- $npm cache clean --force<br>
 2. // node module 설치
-- $ npm install
+- $ npm install<br>
 3. 내비게이션 컴포넌트 만들고 라우터에 추가하기
-- ./src/components/Navigaion.js 새로운 파일 생성
+- ./src/components/Navigaion.js 새로운 파일 생성<br>
 4. 로그인 시 "This is Navigaion!" 글 보여주는 코드
 - const Navigation = () => {
     return <nav>This is Navigation!</nav>
 };
-export default Navigation;
-5. 
+export default Navigation;<br>
+5. Redirect로 로그아웃 후 주소 이동
+- Router.js 코드 import부분에 Redirect 추가
+- <Redirect from="*" to="/" /> 추가
+ -> import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";<br>
+6. useHistory로 로그아웃 후 주소 이동
+- Router.js 코드에 import부분에 Redirect 삭제
+- Profile.js 코드에 import { useHistory } from "react-router-dom"; 추가
+- const onLogOutClick부분에 history.push("/"); 추가
 
 <h2>[4월 27일]</h2>
 
 ## 이메일, 비밀번호 인증 기능 사용해 보기
-1. App.js 코드 수정
+1. App.js 코드 수정<br>
 2. 로그인, 회원가입 토클 버튼 적용하기
 - <span onClick={toggleAccount}>
     {newAccount ? "Sing In" : "Create Account"}
-    </span>
+    </span><br>
 3. error.message 화면에 출력
 - setError(error.message);
 - {error}
