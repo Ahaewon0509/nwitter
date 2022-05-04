@@ -1,5 +1,6 @@
 # 602277111 안혜원
-[5월 4일]
+<h2>[5월 4일]</h2>
+
 ## Clone 직후
 1. // cache 삭제
 - $npm cache clean --force
@@ -14,7 +15,8 @@
 export default Navigation;
 5. 
 
-[4월 27일]
+<h2>[4월 27일]</h2>
+
 ## 이메일, 비밀번호 인증 기능 사용해 보기
 1. App.js 코드 수정
 2. 로그인, 회원가입 토클 버튼 적용하기
@@ -26,9 +28,8 @@ export default Navigation;
 - {error}
 
 
+<h2>[4월 13일]</h2>
 
-
-[4월 13일]
 ## 파이어베이스 로그인 설정하기
 1. 파이어베이스 -> Authentication -> Sign-in method<br>
 - 이메일, 비밀번호 로그인 설정<br>
@@ -52,8 +53,8 @@ import 'firebase/combat/firestore';<br>
 npm i firebase @8.8.0
 
 
+<h2>[4월 6일]</h2>
 
-[4월 6일]
 ## 라우터 적용하기
 1. useState 함수 사용하기: 
 - import { useState } from "react";
@@ -67,11 +68,7 @@ npm i firebase @8.8.0
     <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
     </>
 
-
-
-
-
-[3월 30일]
+<h2>[3월 30일]/<h2>
 
 ## src/components/routs 경로에 새로운 파일 생성
 1. Auth.js
@@ -100,7 +97,7 @@ import 'firebase/compat/firestore';
 1. $npm install firebase
 2. src 폴더에 새 파일 firedase.js 생성
 
-[3월 23일]
+<h2>[3월 23일]</h2>
 
 ## 로컬PC에서 push
 $ git config -- global user.name "Your Name" <br>
