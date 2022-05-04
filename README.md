@@ -75,7 +75,7 @@ npm i firebase @8.8.0
     <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
     </>
 
-<h2>[3월 30일]/<h2>
+<h2>[3월 30일]</h2>
 
 ## src/components/routs 경로에 새로운 파일 생성
 1. Auth.js
