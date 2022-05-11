@@ -6,7 +6,7 @@
 import "firebase/firestore";<br>
 export const dbService = firebase.firestore();<br>
 
-<h3>2. 파이어스토어에 데이터 저장하기</h3> 
+<h3>2. 파이어스토어에 데이터 저장하기: Create</h3> 
 - Home.js 코드 입력: <br>
 import { dbService } from "fbase";<br>
 const onSubmit = async (event) => {
