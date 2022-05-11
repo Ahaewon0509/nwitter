@@ -1,22 +1,48 @@
 # 602277111 안혜원
+
+<h2>[5월 11일]</h2>
+<h3>1. 파이어베이스 데이터베이스 사용하기</h3> 
+- fbase.js 코드 입력: <br>
+import "firebase/firestore";<br>
+export const dbService = firebase.firestore();<br>
+
+<h3>2. 파이어스토어에 데이터 저장하기</h3> 
+- Home.js 코드 입력: <br>
+import { dbService } from "fbase";<br>
+const onSubmit = async (event) => {
+        event.preventDefault();
+        await dbService.collection("nweets").add({
+            text: nweet,
+            createdAt: Date.now(),
+        });
+        setNweet("");
+    };
+
+<h3>3. </h3> 
+
+
 <h2>[5월 4일]</h2>
 
 ## Clone 직후
-<h3>1. // cache 삭제</h3>
+<h3>1. cache 삭제</h3>
 - $npm cache clean --force<br>
-<h3>2. // node module 설치</h3>
+
+<h3>2. node module 설치</h3>
 - $ npm install<br>
 <h3>3. 내비게이션 컴포넌트 만들고 라우터에 추가하기</h3>
 - ./src/components/Navigaion.js 새로운 파일 생성<br>
+
 <h3>4. 로그인 시 "This is Navigaion!" 글 보여주는 코드</h3>
 - const Navigation = () => {
     return <nav>This is Navigation!</nav>
 };
 export default Navigation;<br>
+
 <h3>5. Redirect로 로그아웃 후 주소 이동</h3>
 - Router.js 코드 import부분에 Redirect 추가
 - <Redirect from="*" to="/" /> 추가
  -> import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";<br>
+
 <h3>6. useHistory로 로그아웃 후 주소 이동</h3>
 - Router.js 코드에 import부분에 Redirect 삭제
 - Profile.js 코드에 import { useHistory } from "react-router-dom"; 추가
