@@ -64,7 +64,10 @@ const Home = ({ userObj }) => {
                 //<div key={nweet.id}>
                     //<h4>{nweet.text}</h4>
                 //</div>
-                <Nweet key={nweet.id} nweetObj={nweet}/>
+                <Nweet key={nweet.id}
+                nweetObj={nweet}
+                isOwner={nweet.creatorId === userObj.uid} //내가 쓴 트윗은 나만 지우거나 수정할 수 있도록 만드는 코드
+                />
             ))}
         </div>
         </>
