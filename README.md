@@ -4,11 +4,11 @@
 <h3>1. 트윗 목록 출력해 보기</h3>
 - Home.js 코드 입력: <br>
 div
-    {nweets.map((nweet) => (
-        div key={nweet.id}
-        {nweet.text}
-        /div
-    ))}
+    {nweets.map((nweet) => ( <br>
+        div key={nweet.id} <br>
+        {nweet.text}<br>
+        /div<br>
+    ))}<br>
 /div
 
 <h3>2.</h3>
