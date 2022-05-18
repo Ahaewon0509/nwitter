@@ -3,13 +3,13 @@
 <h2>[5월 18일]</h2>
 <h3>1. 트윗 목록 출력해 보기</h3>
 - Home.js 코드 입력: <br>
-<div>
+div
     {nweets.map((nweet) => (
-        <div key={nweet.id}>
-            <h4>{nweet.text}</h4>
-        </div>
+        div key={nweet.id}
+        {nweet.text}
+        /div
     ))}
-</div>
+/div
 
 <h3>2.</h3>
 
