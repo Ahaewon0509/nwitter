@@ -24,6 +24,13 @@ const Nweet = ({ nweetObj }) => {<br>
 };<br>
 export default Nweet;
 
+<h3>3. Nweet.js 파일에 작성한 기능들</h3>
+- Home.js 코드를 Nweet.js 파일에 트윗 컴포넌트 분리<br>
+- <수정>,<삭제> 버튼 추가<br>
+- 내가 쓴 트윗은 나만 지우거나 수정할 수 있도록 하기<br>
+- 버튼에 삭제 기능 추가<br>
+- ` 백틱사용 코드 추가( const data = await dbService.doc(`nweets/${nweetObj.id}`); )
+
 
 <h2>[5월 11일]</h2>
 <h3>1. 파이어베이스 데이터베이스 사용하기</h3> 
