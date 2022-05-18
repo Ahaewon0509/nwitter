@@ -11,7 +11,18 @@ div
     ))}<br>
 /div
 
-<h3>2.</h3>
+<h3>2. 트윗 컴포넌트 분리하기 위해, src/components/Nweet.js 파일 생성</h3>
+- Nweet.js 코드 입력:<br>
+const Nweet = ({ nweetObj }) => {<br>
+    return (<br>
+        div <br>
+            h4 {nweetObj.text} /h4 <br>
+            button Delete Nweet /button <br>
+            button Exit Nweet /button <br>
+        /div
+    ); <br>
+};<br>
+export default Nweet;
 
 
 <h2>[5월 11일]</h2>
