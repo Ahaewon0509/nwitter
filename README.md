@@ -12,7 +12,7 @@ div
 /div
 
 <h3>2. 트윗 컴포넌트 분리하기 위해, src/components/Nweet.js 파일 생성</h3>
-- Nweet.js 코드 입력:<br>
+- Nweet.js 코드 입력: "트윗<수정>, 트윗<삭제> 버튼 추가하기"<br>
 const Nweet = ({ nweetObj }) => {<br>
     return (<br>
         div <br>
