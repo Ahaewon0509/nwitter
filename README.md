@@ -9,6 +9,10 @@ const [newNweet, setNewNweet] = useState(nweetObj.text);<br>
 const toggleEditing = () => setEditing((prev) => !prev);<br>
 button onClick={toggleEditing}>Cancel /button <br>
 
+<h3>2. 파일 첨부 양식 만들기 </h3>
+- Home.js 코드 입력:
+<input type="file" accept="image/*" />
+
 
 
 
