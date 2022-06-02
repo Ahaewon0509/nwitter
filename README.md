@@ -1,7 +1,14 @@
 # 602277111 안혜원
 
 <h2>[5월 25일]</h2>
-<h3>1.</h3>
+<h3>1. 수정 기능을 위한 useState 추가하기</h3>
+- Nweet.js 코드입력: <br>
+import { useState } from "react";<br>
+const [editing, setEditing] = useState(false);<br>
+const [newNweet, setNewNweet] = useState(nweetObj.text);<br>
+const toggleEditing = () => setEditing((prev) => !prev);<br>
+button onClick={toggleEditing}>Cancel /button <br>
+
 
 
 

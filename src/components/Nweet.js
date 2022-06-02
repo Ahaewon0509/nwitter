@@ -1,6 +1,9 @@
 import { dbService } from "fbase";
+import { useState } from "react";
 
 const Nweet = ({ nweetObj, isOwner }) => {
+    const [editing, setEditing] = useState(false);
+    const [newNweet, setNewNweet] = useState(nweetObj.text);
     const onDeleteClick = async () => { //버튼에 삭제 기능 추가, 아래 button: "Delete Nweet"부분에 onClick={onDeleteClick} 추가
         const ok = window.confirm("삭제하시겠습니까?");
         console.log(ok);
@@ -11,14 +14,42 @@ const Nweet = ({ nweetObj, isOwner }) => {
         }
     };
 
+    const toggleEditing = () => setEditing((prev) => !prev);
+
+    const onChange = (event) => {
+        const {
+            target: { value },
+        } = event;
+        setNewNweet(value);
+    };
+
+    const onSubmit = async (event) => { //파이어스토어에 새 입력값 반영하는 코드
+        event.preventDefault();
+        //console.log(nweetObj.id, newNweet);
+        await dbService.doc(`nweets/${nweetObj.id}`).update({ text: newNweet });
+        setEditing(false);
+    };
+
     return ( //<수정>,<삭제> 버튼 추가코드
         <div>
+            {editing ? (
+            <>
+            <from onSubmit={onSubmit}>
+                <input onChange={onChange} value={newNweet} required />
+                <input type="submit" value="Update Nweet" />
+            </from>
+            <button onClick={toggleEditing}>Cancel</button>
+            </> 
+            ) : (
+            <>
             <h4>{nweetObj.text}</h4>
             {isOwner && ( //isOwner &&와 같이 연산자를 이용하여, isOwner가 true일 때만버튼이 나타나게 하는 코드
             <>
             <button onClick={onDeleteClick}>Delete Nweet</button>
-            <button>Exit Nweet</button>
-            </>
+            <button onClick={toggleEditing}>Exit Nweet</button>
+            </>    
+        )}
+        </>    
         )}
         </div>
     );
