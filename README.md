@@ -18,11 +18,6 @@ input type="file" accept="image/*" /<br>
 - Home.js 코드 입력:<br>
 const onClearAttachment = () => setAttachment("");<br>
 
-
-
-
-
-
 <h2>[5월 18일]</h2>
 <h3>1. 트윗 목록 출력해 보기</h3>
 - Home.js 코드 입력: <br>
