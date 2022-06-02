@@ -10,8 +10,14 @@ const toggleEditing = () => setEditing((prev) => !prev);<br>
 button onClick={toggleEditing}>Cancel /button <br>
 
 <h3>2. 파일 첨부 양식 만들기 </h3>
-- Home.js 코드 입력:
-<input type="file" accept="image/*" />
+- Home.js 코드 입력:<br>
+input type="file" accept="image/*" /<br>
+-> 폴더에 있는 이미지 파일 불러오는 코드<br>
+
+<h3>3. 파일 선택 취소 버튼 만들기</h3>
+- Home.js 코드 입력:<br>
+const onClearAttachment = () => setAttachment("");<br>
+
 
 
 
