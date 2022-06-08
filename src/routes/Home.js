@@ -43,7 +43,7 @@ const Home = ({ userObj }) => {
     }
         await dbService.collection("nweets").add({
             text: nweet,
-            createAt: DataTransfer.now(),
+            createAt: Data.now(),
             creatorId: userObj.uid,
             attachmentUrl,
         });
