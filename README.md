@@ -1,5 +1,20 @@
 # 602277111 안혜원
 
+<h2>[6월 08일]</h2>
+<h3>1. 파이어베이스 스토리지 임포트하기</h3>
+- fbase.js 코드입력:<br>
+import "firebase/storage";<br>
+export const storageService = firebase.storage();<br>
+
+
+
+
+
+
+
+
+
+
 <h2>[5월 25일]</h2>
 <h3>1. 수정 기능을 위한 useState 추가하기</h3>
 - Nweet.js 코드입력: <br>
