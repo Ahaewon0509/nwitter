@@ -13,8 +13,6 @@ form<br>
 <h3> 3. 새로운 js파일 생성 </h3>
 - components -> AuthForm.js<br>
 
-
-
 <h2>[6월 08일]</h2>
 <h3>1. 파이어베이스 스토리지 임포트하기</h3>
 - fbase.js 코드입력:<br>
