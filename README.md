@@ -4,10 +4,10 @@
 <h2>[6월 14일]</h2>
 <h3>1. 프로필 업데이트 기능 추가하기</h3>
 - Profile.js 코드 입력:
-<form><br>
-    <input type="text" placeholder="Display name"/><br>
-    <input type="submit" value="Update Profile" /><br>
-</form><br>
+form<br>
+    input type="text" placeholder="Display name"<br>
+    input type="submit" value="Update Profile" <br>
+/form<br>
 <h3>2. </h3>
 
 
