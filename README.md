@@ -8,9 +8,10 @@ form<br>
     input type="text" placeholder="Display name"<br>
     input type="submit" value="Update Profile" <br>
 /form<br>
-<h3> 새로운 js파일 생성 </h3>
+<h3> 2. 새로운 js파일 생성 </h3>
 - components -> NweetFactory.js<br>
-
+<h3> 3. 새로운 js파일 생성 </h3>
+- components -> AuthForm.js<br>
 
 
 
