@@ -22,10 +22,18 @@ function App() {
   }, []);
   //setInterval(() => console.log(authService.currentUser), 2000);
 
+  const refreshUser = () => {
+    setUserObj(authService.currentUser);
+  };
+
   return (
     <>
     {init ? (
-    <AppRouter isLoggedIn={isLoggedIn} userObj={userObj} /> 
+    <AppRouter
+    refreshUser={refreshUser}
+    isLoggedIn={isLoggedIn} 
+    userObj={userObj} 
+    /> 
     ):(
       "initializing..."
     )}
