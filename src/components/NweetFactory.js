@@ -16,7 +16,7 @@ const NweetFactory = () => {
                     <button onClick={onClearAttachment}>Clear</button>
                 </div>
             )}
-            </form>
+        </form>
     );
 };
 
